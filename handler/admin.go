@@ -73,7 +73,8 @@ const adminHTML = `<!DOCTYPE html>
 <script>
 async function refresh() {
   try {
-    const res = await fetch('/models');
+    // Use relative path so it works behind any reverse proxy prefix
+    const res = await fetch('models');
     const models = await res.json();
     const tbody = document.getElementById('tbody');
     let html = '';
