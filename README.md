@@ -44,8 +44,13 @@
 
 ```bash
 go build -o llm-gateway .
+```
+
+```bash
+# 默认端口 8080
 ./llm-gateway
-# 默认端口 8080，可通过 PORT 环境变量修改
+
+# 或自定义端口
 PORT=9090 ./llm-gateway
 ```
 
