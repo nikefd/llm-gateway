@@ -40,6 +40,20 @@
 
 - Go 1.22+ (使用了 `net/http` 的路由模式匹配)
 
+如果还没装 Go：
+
+```bash
+# Linux/amd64
+curl -sLO https://go.dev/dl/go1.24.4.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.24.4.linux-amd64.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+
+# 验证
+go version
+```
+
+> macOS 可直接 `brew install go`，其他平台参考 https://go.dev/dl
+
 ### 启动
 
 ```bash
