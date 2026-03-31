@@ -49,6 +49,15 @@ go build -o llm-gateway .
 PORT=9090 ./llm-gateway
 ```
 
+### 一键 Demo
+
+```bash
+chmod +x demo.sh
+./demo.sh
+```
+
+自动启动服务，依次演示所有功能（注册、流式推理、权重路由、并发限制、热更新、删除、错误模拟、Prometheus 指标），最后自动清理退出。可重复运行。
+
 ## API 调用示例
 
 ### 1. 注册模型
